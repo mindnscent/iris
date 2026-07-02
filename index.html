@@ -6,24 +6,24 @@
 <title>홍채로 보는 기질 분석 | MIND N SCENT</title>
 <style>
 :root{
---sage-darkest:#4A5D4F; --sage-dark:#5E7563; --sage:#7C9082; --sage-medium:#96A99A;
---sage-light:#B5C4B1; --sage-lighter:#D1DBCE; --sage-lightest:#EBF0E9; --sage-bg:#F5F7F3;
---cream:#FAF8F4; --warm-gold:#C4A96A; --warm-gold-light:#E8DFC8; --white:#FFFFFF;
---text-dark:#2D3830; --text-medium:#4A5D4F; --text-light:#7C9082; --text-muted:#A3B0A6;
---max-width:480px; --radius-sm:8px; --radius-md:12px; --radius-lg:16px; --radius-xl:24px;
---shadow-sm:0 1px 3px rgba(74,93,79,.08); --shadow-md:0 4px 12px rgba(74,93,79,.1); --shadow-lg:0 8px 24px rgba(74,93,79,.12);
+  --sage-darkest:#4A5D4F; --sage-dark:#5E7563; --sage:#7C9082; --sage-medium:#96A99A;
+  --sage-light:#B5C4B1; --sage-lighter:#D1DBCE; --sage-lightest:#EBF0E9; --sage-bg:#F5F7F3;
+  --cream:#FAF8F4; --warm-gold:#C4A96A; --warm-gold-light:#E8DFC8; --white:#FFFFFF;
+  --text-dark:#2D3830; --text-medium:#4A5D4F; --text-light:#7C9082; --text-muted:#A3B0A6;
+  --max-width:480px; --radius-sm:8px; --radius-md:12px; --radius-lg:16px; --radius-xl:24px;
+  --shadow-sm:0 1px 3px rgba(74,93,79,.08); --shadow-md:0 4px 12px rgba(74,93,79,.1); --shadow-lg:0 8px 24px rgba(74,93,79,.12);
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 body{
-font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',sans-serif;
-background:var(--sage-bg); color:var(--text-dark); min-height:100vh; line-height:1.65;
--webkit-font-smoothing:antialiased;
+  font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Segoe UI','Malgun Gothic',sans-serif;
+  background:var(--sage-bg); color:var(--text-dark); min-height:100vh; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
 }
 body::before{
-content:''; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%);
-width:300px; height:120px;
-background-size:contain; background-repeat:no-repeat; background-position:center;
-opacity:.04; pointer-events:none; z-index:0;
+  content:''; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%);
+  width:300px; height:120px;
+  background-size:contain; background-repeat:no-repeat; background-position:center;
+  opacity:.04; pointer-events:none; z-index:0;
 }
 .app-container{max-width:var(--max-width); margin:0 auto; padding:0 20px 48px; position:relative; z-index:1;}
 .header{text-align:center; padding:28px 0 8px;}
@@ -33,13 +33,13 @@ opacity:.04; pointer-events:none; z-index:0;
 .hero .en{display:block; font-size:11px; letter-spacing:3px; color:var(--warm-gold); font-weight:600; margin-bottom:8px;}
 .hero p{font-size:13.5px; color:var(--text-light); margin-top:10px;}
 .guide-pill{
-display:inline-block; margin-top:16px; padding:9px 18px; background:var(--white);
-border:1.5px solid var(--sage-lighter); border-radius:20px; font-size:12.5px; color:var(--sage-dark); font-weight:600; box-shadow:var(--shadow-sm);
+  display:inline-block; margin-top:16px; padding:9px 18px; background:var(--white);
+  border:1.5px solid var(--sage-lighter); border-radius:20px; font-size:12.5px; color:var(--sage-dark); font-weight:600; box-shadow:var(--shadow-sm);
 }
 .section-title{font-size:12px; font-weight:700; letter-spacing:1px; color:var(--warm-gold); margin:30px 4px 6px; text-transform:uppercase;}
 .section-sub{font-size:12px; color:var(--text-muted); margin:0 4px 12px;}
 .intro-card{
-background:var(--white); border-radius:var(--radius-lg); padding:20px; box-shadow:var(--shadow-md); margin-bottom:14px;
+  background:var(--white); border-radius:var(--radius-lg); padding:20px; box-shadow:var(--shadow-md); margin-bottom:14px;
 }
 .intro-card h3{font-size:15px; color:var(--sage-dark); margin-bottom:8px; font-weight:700;}
 .intro-card p{font-size:13.5px; color:var(--text-medium); margin-bottom:10px;}
@@ -55,9 +55,9 @@ background:var(--white); border-radius:var(--radius-lg); padding:20px; box-shado
 .ps-box .ps small{font-size:11px; color:var(--text-light); line-height:1.4;}
 .grid{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
 .type-card{
-background:var(--white); border-radius:var(--radius-lg); padding:18px 14px; box-shadow:var(--shadow-sm);
-border:1.5px solid transparent; cursor:pointer; transition:all .18s; text-align:center; position:relative;
-animation:fadeIn .4s ease both;
+  background:var(--white); border-radius:var(--radius-lg); padding:18px 14px; box-shadow:var(--shadow-sm);
+  border:1.5px solid transparent; cursor:pointer; transition:all .18s; text-align:center; position:relative;
+  animation:fadeIn .4s ease both;
 }
 .type-card:active{transform:scale(.97);}
 .type-card:hover{border-color:var(--sage-light); box-shadow:var(--shadow-md);}
@@ -83,16 +83,16 @@ animation:fadeIn .4s ease both;
 .cta h3{font-size:17px; color:var(--sage-dark); font-weight:700; margin-bottom:6px;}
 .cta p{font-size:13px; color:var(--text-medium); margin-bottom:18px;}
 .btn-primary{
-display:flex; align-items:center; justify-content:center; gap:8px; width:100%; padding:15px;
-background:linear-gradient(135deg,var(--sage),var(--sage-dark)); color:#fff; border:none;
-border-radius:var(--radius-md); font-size:15px; font-weight:600; cursor:pointer; transition:all .2s;
-text-decoration:none; margin-bottom:10px; box-shadow:var(--shadow-sm);
+  display:flex; align-items:center; justify-content:center; gap:8px; width:100%; padding:15px;
+  background:linear-gradient(135deg,var(--sage),var(--sage-dark)); color:#fff; border:none;
+  border-radius:var(--radius-md); font-size:15px; font-weight:600; cursor:pointer; transition:all .2s;
+  text-decoration:none; margin-bottom:10px; box-shadow:var(--shadow-sm);
 }
 .btn-primary:active{transform:scale(.98); opacity:.92;}
 .btn-kakao{
-display:flex; align-items:center; justify-content:center; gap:8px; width:100%; padding:15px;
-background:#FEE500; color:#3A2929; border:none; border-radius:var(--radius-md);
-font-size:15px; font-weight:700; cursor:pointer; transition:all .2s; text-decoration:none;
+  display:flex; align-items:center; justify-content:center; gap:8px; width:100%; padding:15px;
+  background:#FEE500; color:#3A2929; border:none; border-radius:var(--radius-md);
+  font-size:15px; font-weight:700; cursor:pointer; transition:all .2s; text-decoration:none;
 }
 .btn-kakao:active{transform:scale(.98); opacity:.92;}
 .disclaimer{font-size:11px; color:var(--text-muted); line-height:1.6; margin-top:22px; padding:14px; background:var(--sage-lightest); border-radius:var(--radius-md);}
@@ -129,238 +129,262 @@ font-size:15px; font-weight:700; cursor:pointer; transition:all .2s; text-decora
 </head>
 <body>
 <div class="app-container">
-<div class="header">
-<img class="logo" src="logo.png" alt="MIND N SCENT">
+  <div class="header">
+    <img class="logo" src="logo.png" alt="MIND N SCENT">
+  </div>
+
+  <div class="hero">
+    <span class="en">BROWN IRIS CONSTITUTION</span>
+    <h1>홍채로 보는 기질 분석</h1>
+    <p>세상에 단 하나뿐인 홍채,<br>그 무늬에 새겨진 나의 타고난 기질과 재능.</p>
+    <div class="guide-pill">💛 상담사가 알려드린 주기질·부기질을 눌러보세요</div>
+  </div>
+
+  <div class="section-title">About</div>
+  <div class="intro-card">
+    <h3>홍채 분석이란?</h3>
+    <p>홍채는 대부분 7세까지 형성되어 이후 크게 변하지 않습니다. 그 고유한 무늬를 통해 타고난 기질과 재능, 좌·우뇌 성향, 내·외향성 등 나만의 성향을 이해할 수 있습니다.</p>
+    <p>자신을 아는 가장 좋은 도구이자, 타인을 더 깊이 이해하도록 돕는 따뜻한 길잡이입니다.</p>
+  </div>
+
+  <div class="intro-card">
+    <h3>나의 유형은 이렇게 나와요</h3>
+    <p>플라워·주얼·스트림·쉐이커라는 <b>네 가지 기본 에너지</b>가 어우러져, 아래 <b>네 가지 주요 유형</b> 중 하나로 나타납니다. 홍채를 보면 그중 가장 강한 하나가 <b>주기질</b>, 그다음이 <b>부기질</b>로 드러나요.</p>
+    <div class="ps-box">
+      <div class="ps"><b>주기질</b><small>가장 강하게 드러나는 나의 중심 성향</small></div>
+      <div class="ps"><b>부기질</b><small>주기질을 보완하는 또 하나의 결</small></div>
+    </div>
+  </div>
+
+  <div class="intro-card">
+    <h3>홍채로 무엇을 볼까요?</h3>
+    <ul class="look-list">
+      <li><span>🎨</span><div><b>기질과 재능</b><br>성격·행동 성향, 그리고 노래·말하기·상담·춤·그림·운동·글쓰기 등 타고난 재능</div></li>
+      <li><span>🧠</span><div><b>좌·우뇌 성향</b><br>사고방식, 학습 스타일, 창의력 등 뇌의 개발 성향</div></li>
+      <li><span>💗</span><div><b>감정과 두려움의 요소</b><br>내·외향성, 불안의 원인과 강도, 완벽주의, 감정 표현의 어려움 등</div></li>
+      <li><span>🕯️</span><div><b>맞춤 아로마테라피</b><br>나를 더 깊이 이해하고, 어울리는 향으로 균형을 찾는 방향</div></li>
+    </ul>
+  </div>
+
+  <div class="section-title">주요 유형 · 4</div>
+  <p class="section-sub">상담에서 주기질·부기질로 안내드리는 네 가지 유형입니다.</p>
+  <div class="grid" id="mainGrid"></div>
+
+  <div class="section-title" style="margin-top:34px;">기본 에너지 · 4</div>
+  <p class="section-sub">주요 유형을 이루는 바탕이 되는 네 가지 에너지입니다.</p>
+  <div class="info-note">💡 이 네 가지가 <b>재료</b>라면, 위의 주요 유형은 두 재료가 어우러져 만들어진 <b>나의 성향</b>이에요.</div>
+  <div class="grid" id="baseGrid"></div>
+
+  <p class="divider-note">카드를 누르면 자세한 설명이 열립니다</p>
+
+  <div class="cta">
+    <h3>더 깊이 알고 싶으신가요?</h3>
+    <p>정식 상담에서는 주기질·부기질의 조합과 에너지 흐름,<br>맞춤 아로마 블렌딩까지 함께 안내해드립니다.</p>
+    <a class="btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdxRVfYqt1-BDBCExaWxPQHJURiLABmP-03Y9RhY_so8bSB9g/viewform" target="_blank" rel="noopener">📝 정식 상담 신청하기</a>
+    <a class="btn-kakao" href="https://open.kakao.com/me/mindnscent" target="_blank" rel="noopener">💬 카카오톡 오픈채팅 상담</a>
+  </div>
+
+  <div class="disclaimer">
+    ※ 갈색 홍채 상담은 장기의 상태나 질병을 진단·확증하는 의학적 방법이 아닙니다. 개인의 잠재력과 내면의 재능을 발견하고 긍정적인 에너지 전환을 돕는, 정신적·영적 차원의 접근입니다.
+  </div>
+
+  <div class="footer">
+    <span class="brand-mark">MIND N SCENT</span>
+    <span class="slogan">Find Your Inner Light</span>
+  </div>
 </div>
-<div class="hero">
-<span class="en">BROWN IRIS CONSTITUTION</span>
-<h1>홍채로 보는 기질 분석</h1>
-<p>세상에 단 하나뿐인 홍채,<br>그 무늬에 새겨진 나의 타고난 기질과 재능.</p>
-<div class="guide-pill">💛 상담사가 알려드린 주기질·부기질을 눌러보세요</div>
-</div>
-<div class="section-title">About</div>
-<div class="intro-card">
-<h3>홍채 분석이란?</h3>
-<p>홍채는 대부분 7세까지 형성되어 이후 크게 변하지 않습니다. 그 고유한 무늬를 통해 타고난 기질과 재능, 좌·우뇌 성향, 내·외향성 등 나만의 성향을 이해할 수 있습니다.</p>
-<p>자신을 아는 가장 좋은 도구이자, 타인을 더 깊이 이해하도록 돕는 따뜻한 길잡이입니다.</p>
-</div>
-<div class="intro-card">
-<h3>나의 유형은 이렇게 나와요</h3>
-<p>플라워·주얼·스트림·쉐이커라는 <b>네 가지 기본 에너지</b>가 어우러져, 아래 <b>네 가지 주요 유형</b> 중 하나로 나타납니다. 홍채를 보면 그중 가장 강한 하나가 <b>주기질</b>, 그다음이 <b>부기질</b>로 드러나요.</p>
-<div class="ps-box">
-<div class="ps"><b>주기질</b><small>가장 강하게 드러나는 나의 중심 성향</small></div>
-<div class="ps"><b>부기질</b><small>주기질을 보완하는 또 하나의 결</small></div>
-</div>
-</div>
-<div class="intro-card">
-<h3>홍채로 무엇을 볼까요?</h3>
-<ul class="look-list">
-<li><span>🎨</span><div><b>기질과 재능</b><br>성격·행동 성향, 그리고 노래·말하기·상담·춤·그림·운동·글쓰기 등 타고난 재능</div></li>
-<li><span>🧠</span><div><b>좌·우뇌 성향</b><br>사고방식, 학습 스타일, 창의력 등 뇌의 개발 성향</div></li>
-<li><span>💗</span><div><b>감정과 두려움의 요소</b><br>내·외향성, 불안의 원인과 강도, 완벽주의, 감정 표현의 어려움 등</div></li>
-<li><span>🕯️</span><div><b>맞춤 아로마테라피</b><br>나를 더 깊이 이해하고, 어울리는 향으로 균형을 찾는 방향</div></li>
-</ul>
-</div>
-<div class="section-title">주요 유형 · 4</div>
-<p class="section-sub">상담에서 주기질·부기질로 안내드리는 네 가지 유형입니다.</p>
-<div class="grid" id="mainGrid"></div>
-<div class="section-title" style="margin-top:34px;">기본 에너지 · 4</div>
-<p class="section-sub">주요 유형을 이루는 바탕이 되는 네 가지 에너지입니다.</p>
-<div class="info-note">💡 이 네 가지가 <b>재료</b>라면, 위의 주요 유형은 두 재료가 어우러져 만들어진 <b>나의 성향</b>이에요.</div>
-<div class="grid" id="baseGrid"></div>
-<p class="divider-note">카드를 누르면 자세한 설명이 열립니다</p>
-<div class="cta">
-<h3>더 깊이 알고 싶으신가요?</h3>
-<p>정식 상담에서는 주기질·부기질의 조합과 에너지 흐름,<br>맞춤 아로마 블렌딩까지 함께 안내해드립니다.</p>
-<a class="btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdxRVfYqt1-BDBCExaWxPQHJURiLABmP-03Y9RhY_so8bSB9g/viewform" target="_blank" rel="noopener">📝 정식 상담 신청하기</a>
-<a class="btn-kakao" href="https://open.kakao.com/me/mindnscent" target="_blank" rel="noopener">💬 카카오톡 오픈채팅 상담</a>
-</div>
-<div class="disclaimer">
-※ 갈색 홍채 상담은 장기의 상태나 질병을 진단·확증하는 의학적 방법이 아닙니다. 개인의 잠재력과 내면의 재능을 발견하고 긍정적인 에너지 전환을 돕는, 정신적·영적 차원의 접근입니다.
-</div>
-<div class="footer">
-<span class="brand-mark">MIND N SCENT</span>
-<span class="slogan">Find Your Inner Light</span>
-</div>
-</div>
+
 <div class="modal-overlay" id="overlay" onclick="if(event.target===this)closeModal()">
-<div class="modal" id="modal"></div>
+  <div class="modal" id="modal"></div>
 </div>
+
 <script>
 const TYPES=[
  // ===== 주요 유형 (복합기질) =====
-{id:'shaker-flower',em:'🎉',ko:'쉐이커 플라워',en:'Shaker · Flower',main:true,tag:'열정과 카리스마로 삶의 에너지를 주입하는 치어리더',
-essence:[
-'창의적이고 역동적인 에너지를 지녔습니다. 사람들로부터 주목받고 인정받는 것을 즐기며, 이 인정 욕구가 성장의 원동력이 됩니다.',
-'화려한 상상력과 급진적 통찰력으로 진보적이고 양심적인 행동을 이끌며, 열정과 카리스마로 그룹을 이끌고 사람들에게 영감을 줍니다.',
-'미디어·예술·음악·정치·경제 등 다양한 분야에 관심을 가지며, 무리 지어 다니는 것을 편안해하고 네트워킹에 능합니다.'],
-strengths:[
-'열정으로 사람들에게 동기를 부여하는 촉진자',
-'큰 그림을 한눈에 보고 복잡한 시스템을 이해·재조립하는 능력',
-'사람을 끌어모으는 뛰어난 사회성과 사교성',
-'역동성으로 다양한 분야에서 성공하는 힘'],
-growth:[
-'감정 기복이 있어 우울·낙담에 빠지기 쉬우니, 감정을 억누르지 말고 건강하게 발산하는 것이 좋습니다.',
-'실망하거나 냉소적으로 흐르지 않도록, 큰 그림과 함께 디테일을 챙길 파트너가 도움이 됩니다.'],
-jobs:['배우·가수·방송인','미디어·음악 프로듀서','이벤트 기획·PR','마케터·브랜드 매니저','교육자·강연가','정치·사회 활동가'],
-aroma:[
-{oil:'시나몬 · 버가못 · 바질',note:'다양한 감정을 발산하도록 도와줍니다'},
-{oil:'제라니움',note:'에너지 균형 회복을 돕습니다'},
-{oil:'샌달우드',note:'심신의 안정과 자기 확신을 불어넣습니다'},
-{oil:'만다린',note:'완벽주의를 유연하게 풀어줍니다'}],
-kw:['역동적','창의적','인정욕구','상상력','통찰력','열정','카리스마','사교성','급진적']},
-{id:'shaker-jewel',em:'⚡',ko:'쉐이커 주얼',en:'Shaker · Jewel',main:true,tag:'세상을 뒤흔드는 혁명가이거나 반항아',
-essence:[
-'강력하고 다이내믹한 에너지가 때로 격렬하게 밖으로 발산됩니다. 미래 지향적이고 혁명적인 아이디어를 품어, 기존 체계나 권위에 도전하는 독립적이고 반항적인 성격을 보입니다.',
-'자기만의 방식으로 문제를 해결하려는 노력을 멈추지 않으며, 많은 시련과 도전 속에서도 지도자 역할을 해냅니다.',
-'자신의 생각과 감정을 말뿐 아니라 시각적인 방법으로도 강렬하게 전달합니다.'],
-strengths:[
-'새로운 트렌드를 포착하는 미래 지향적 시각',
-'독립적이며 사람을 이끄는 리더십',
-'한번 마음먹으면 끝까지 해내는 강력한 의지',
-'타인을 설득하는 열정적 커뮤니케이션'],
-growth:[
-'이상과 현실이 어긋날 때 감정의 불안정이나 충동적인 반응이 나타날 수 있어, 완급 조절이 도움이 됩니다.',
-'강한 의견을 가진 만큼 타인의 다른 의견을 수용하는 유연함을 함께 기르면 좋습니다.'],
-jobs:['스타트업 창업자','정치가·사회운동가','미래학자·전략가','테크·데이터 개발자','연구원·과학자','컨설턴트'],
-aroma:[
-{oil:'일랑일랑',note:'미래에 대한 조급함을 완화해 긴장을 낮춥니다'},
-{oil:'미르 · 베티버',note:'이상을 현실로 만드는 에너지를 안정시킵니다'},
-{oil:'제라니움',note:'심신의 에너지 균형을 돕습니다'},
-{oil:'파출리 · 펜넬',note:'공허하고 불안한 감정을 완화합니다'}],
-kw:['다이나믹','미래지향','혁명적','독립적','주도적','리더십','의지력','열정']},
-{id:'stream-flower',em:'🤍',ko:'스트림 플라워',en:'Stream · Flower',main:true,tag:'깊은 연민과 책임감으로 사람을 돌보는 모성의 에너지',
-essence:[
-'감성 에너지와 강한 신체 에너지를 동시에 지녀, 두 에너지가 조화를 이루며 깊은 연민과 강한 책임감을 발휘합니다.',
-'다른 사람의 이야기를 경청하는 데 탁월하고, 그룹의 에너지와 분위기를 빠르게 파악해 갈등 상황에서 자연스럽게 중재자 역할을 합니다.'],
-strengths:[
-'감성과 신체 에너지의 조화로 균형 잡힌 반응',
-'사람을 위로하고 돕는 감정의 안정성',
-'갈등을 풀어내는 평화의 중재자',
-'그룹의 분위기를 빠르게 파악하는 직관력'],
-growth:[
-'주변의 문제를 지나치게 자기 책임으로 받아들여 죄책감과 부담을 느끼기 쉬우니, 나를 위한 경계가 필요합니다.',
-'타인을 너무 도우려다 정체성에 혼란을 느낄 수 있어, 나를 돌보는 시간의 균형이 중요합니다.'],
-jobs:['상담사·심리상담','교사·보육·돌봄','간호·케어 전문가','중재자·인사(HR)','예술·치유 분야'],
-aroma:[
-{oil:'블랙페퍼',note:'가장 하고 싶은 일을 놓치지 않고 이루도록 돕습니다'},
-{oil:'바질',note:'원하는 것을 정확하게 표현하도록 돕습니다'},
-{oil:'스피아민트',note:'과도한 책임감으로 지친 몸을 풀어줍니다'},
-{oil:'시나몬',note:'감정을 밖으로 발산해 책임감의 무게를 덜어줍니다'},
-{oil:'클라리세이지',note:'원하는 것을 명료하게 판단하도록 돕습니다'}],
-kw:['정서적','직관적','신체감각','평화주의자','중재자','돌봄','책임감']},
-{id:'stream-jewel',em:'📚',ko:'스트림 주얼',en:'Stream · Jewel',main:true,tag:'삶의 지혜를 사람들과 공유하는 인간 데이터베이스',
-essence:[
-'끊임없이 정보와 지식을 탐구하며 배우려는 열정을 지녔습니다. 새로운 주제에 대한 호기심으로 다양한 분야의 지식을 쌓아나갑니다.',
-'이 지적 탐구와 학습 과정이 사고와 통찰을 풍부하게 하여, 더 나은 의사결정과 복잡한 문제 해결에 강합니다.',
-'나이가 들수록 누적된 지식과 경험을 토대로 더욱 현명해지며, 과거의 정보와 경험을 실제 상황에 효과적으로 적용합니다.'],
-strengths:[
-'다양한 주제를 빠르게 습득하는 지식 습득 능력',
-'복잡한 문제를 푸는 논리적·분석적 사고',
-'정보를 체계적으로 정리·관리하는 능력',
-'지식을 나눠 함께 성장하게 돕는 힘'],
-growth:[
-'정보의 홍수에 빠져 일상이나 관계에 소홀해질 수 있으니, 정보를 정리·활용하는 균형이 중요합니다.',
-'자신의 지식을 과대평가하지 않도록 겸손하게 나누고, 변화를 두려워하지 않는 태도가 도움이 됩니다.'],
-jobs:['데이터 분석가·연구원','교육자·튜터','경영 컨설턴트','저널리스트·미디어','힐러·교사·매니저'],
-aroma:[
-{oil:'오렌지 · 만다린',note:'자신에 대한 엄격함과 과도한 진지함을 풀어줍니다'},
-{oil:'펜넬',note:'확신과 명료함을 북돋아줍니다'},
-{oil:'샌달우드',note:'내면의 안정감을 갖도록 돕습니다'},
-{oil:'바질',note:'생각과 감정을 잘 표현하도록 돕습니다'},
-{oil:'로즈우드 · 사이프러스',note:'변화의 시기를 잘 받아들이도록 돕습니다'},
-{oil:'클라리세이지',note:'명료한 선택을 하도록 돕습니다'}],
-kw:['지식추구','평생학습자','데이터베이스','배려심','안정성','지혜로운','현명한']},
+ {id:'shaker-flower',em:'🎉',ko:'쉐이커 플라워',en:'Shaker · Flower',main:true,tag:'열정과 카리스마로 삶의 에너지를 주입하는 치어리더',
+  essence:[
+    '창의적이고 역동적인 에너지를 지녔습니다. 사람들로부터 주목받고 인정받는 것을 즐기며, 이 인정 욕구가 성장의 원동력이 됩니다.',
+    '화려한 상상력과 급진적 통찰력으로 진보적이고 양심적인 행동을 이끌며, 열정과 카리스마로 그룹을 이끌고 사람들에게 영감을 줍니다.',
+    '미디어·예술·음악·정치·경제 등 다양한 분야에 관심을 가지며, 무리 지어 다니는 것을 편안해하고 네트워킹에 능합니다.'],
+  strengths:[
+    '열정으로 사람들에게 동기를 부여하는 촉진자',
+    '큰 그림을 한눈에 보고 복잡한 시스템을 이해·재조립하는 능력',
+    '사람을 끌어모으는 뛰어난 사회성과 사교성',
+    '역동성으로 다양한 분야에서 성공하는 힘'],
+  growth:[
+    '감정 기복이 있어 우울·낙담에 빠지기 쉬우니, 감정을 억누르지 말고 건강하게 발산하는 것이 좋습니다.',
+    '실망하거나 냉소적으로 흐르지 않도록, 큰 그림과 함께 디테일을 챙길 파트너가 도움이 됩니다.'],
+  jobs:['배우·가수·방송인','미디어·음악 프로듀서','이벤트 기획·PR','마케터·브랜드 매니저','교육자·강연가','정치·사회 활동가'],
+  aroma:[
+    {oil:'시나몬 · 버가못 · 바질',note:'다양한 감정을 발산하도록 도와줍니다'},
+    {oil:'제라니움',note:'에너지 균형 회복을 돕습니다'},
+    {oil:'샌달우드',note:'심신의 안정과 자기 확신을 불어넣습니다'},
+    {oil:'만다린',note:'완벽주의를 유연하게 풀어줍니다'}],
+  kw:['역동적','창의적','인정욕구','상상력','통찰력','열정','카리스마','사교성','급진적']},
+
+ {id:'shaker-jewel',em:'⚡',ko:'쉐이커 주얼',en:'Shaker · Jewel',main:true,tag:'세상을 뒤흔드는 혁명가이거나 반항아',
+  essence:[
+    '강력하고 다이내믹한 에너지가 때로 격렬하게 밖으로 발산됩니다. 미래 지향적이고 혁명적인 아이디어를 품어, 기존 체계나 권위에 도전하는 독립적이고 반항적인 성격을 보입니다.',
+    '자기만의 방식으로 문제를 해결하려는 노력을 멈추지 않으며, 많은 시련과 도전 속에서도 지도자 역할을 해냅니다.',
+    '자신의 생각과 감정을 말뿐 아니라 시각적인 방법으로도 강렬하게 전달합니다.'],
+  strengths:[
+    '새로운 트렌드를 포착하는 미래 지향적 시각',
+    '독립적이며 사람을 이끄는 리더십',
+    '한번 마음먹으면 끝까지 해내는 강력한 의지',
+    '타인을 설득하는 열정적 커뮤니케이션'],
+  growth:[
+    '이상과 현실이 어긋날 때 감정의 불안정이나 충동적인 반응이 나타날 수 있어, 완급 조절이 도움이 됩니다.',
+    '강한 의견을 가진 만큼 타인의 다른 의견을 수용하는 유연함을 함께 기르면 좋습니다.'],
+  jobs:['스타트업 창업자','정치가·사회운동가','미래학자·전략가','테크·데이터 개발자','연구원·과학자','컨설턴트'],
+  aroma:[
+    {oil:'일랑일랑',note:'미래에 대한 조급함을 완화해 긴장을 낮춥니다'},
+    {oil:'미르 · 베티버',note:'이상을 현실로 만드는 에너지를 안정시킵니다'},
+    {oil:'제라니움',note:'심신의 에너지 균형을 돕습니다'},
+    {oil:'파출리 · 펜넬',note:'공허하고 불안한 감정을 완화합니다'}],
+  kw:['다이나믹','미래지향','혁명적','독립적','주도적','리더십','의지력','열정']},
+
+ {id:'stream-flower',em:'🤍',ko:'스트림 플라워',en:'Stream · Flower',main:true,tag:'깊은 연민과 책임감으로 사람을 돌보는 모성의 에너지',
+  essence:[
+    '감성 에너지와 강한 신체 에너지를 동시에 지녀, 두 에너지가 조화를 이루며 깊은 연민과 강한 책임감을 발휘합니다.',
+    '다른 사람의 이야기를 경청하는 데 탁월하고, 그룹의 에너지와 분위기를 빠르게 파악해 갈등 상황에서 자연스럽게 중재자 역할을 합니다.'],
+  strengths:[
+    '감성과 신체 에너지의 조화로 균형 잡힌 반응',
+    '사람을 위로하고 돕는 감정의 안정성',
+    '갈등을 풀어내는 평화의 중재자',
+    '그룹의 분위기를 빠르게 파악하는 직관력'],
+  growth:[
+    '주변의 문제를 지나치게 자기 책임으로 받아들여 죄책감과 부담을 느끼기 쉬우니, 나를 위한 경계가 필요합니다.',
+    '타인을 너무 도우려다 정체성에 혼란을 느낄 수 있어, 나를 돌보는 시간의 균형이 중요합니다.'],
+  jobs:['상담사·심리상담','교사·보육·돌봄','간호·케어 전문가','중재자·인사(HR)','예술·치유 분야'],
+  aroma:[
+    {oil:'블랙페퍼',note:'가장 하고 싶은 일을 놓치지 않고 이루도록 돕습니다'},
+    {oil:'바질',note:'원하는 것을 정확하게 표현하도록 돕습니다'},
+    {oil:'스피아민트',note:'과도한 책임감으로 지친 몸을 풀어줍니다'},
+    {oil:'시나몬',note:'감정을 밖으로 발산해 책임감의 무게를 덜어줍니다'},
+    {oil:'클라리세이지',note:'원하는 것을 명료하게 판단하도록 돕습니다'}],
+  kw:['정서적','직관적','신체감각','평화주의자','중재자','돌봄','책임감']},
+
+ {id:'stream-jewel',em:'📚',ko:'스트림 주얼',en:'Stream · Jewel',main:true,tag:'삶의 지혜를 사람들과 공유하는 인간 데이터베이스',
+  essence:[
+    '끊임없이 정보와 지식을 탐구하며 배우려는 열정을 지녔습니다. 새로운 주제에 대한 호기심으로 다양한 분야의 지식을 쌓아나갑니다.',
+    '이 지적 탐구와 학습 과정이 사고와 통찰을 풍부하게 하여, 더 나은 의사결정과 복잡한 문제 해결에 강합니다.',
+    '나이가 들수록 누적된 지식과 경험을 토대로 더욱 현명해지며, 과거의 정보와 경험을 실제 상황에 효과적으로 적용합니다.'],
+  strengths:[
+    '다양한 주제를 빠르게 습득하는 지식 습득 능력',
+    '복잡한 문제를 푸는 논리적·분석적 사고',
+    '정보를 체계적으로 정리·관리하는 능력',
+    '지식을 나눠 함께 성장하게 돕는 힘'],
+  growth:[
+    '정보의 홍수에 빠져 일상이나 관계에 소홀해질 수 있으니, 정보를 정리·활용하는 균형이 중요합니다.',
+    '자신의 지식을 과대평가하지 않도록 겸손하게 나누고, 변화를 두려워하지 않는 태도가 도움이 됩니다.'],
+  jobs:['데이터 분석가·연구원','교육자·튜터','경영 컨설턴트','저널리스트·미디어','힐러·교사·매니저'],
+  aroma:[
+    {oil:'오렌지 · 만다린',note:'자신에 대한 엄격함과 과도한 진지함을 풀어줍니다'},
+    {oil:'펜넬',note:'확신과 명료함을 북돋아줍니다'},
+    {oil:'샌달우드',note:'내면의 안정감을 갖도록 돕습니다'},
+    {oil:'바질',note:'생각과 감정을 잘 표현하도록 돕습니다'},
+    {oil:'로즈우드 · 사이프러스',note:'변화의 시기를 잘 받아들이도록 돕습니다'},
+    {oil:'클라리세이지',note:'명료한 선택을 하도록 돕습니다'}],
+  kw:['지식추구','평생학습자','데이터베이스','배려심','안정성','지혜로운','현명한']},
+
  // ===== 기본 에너지 =====
-{id:'flower',em:'🌸',ko:'플라워',en:'Flower',base:true,tag:'생동감과 열정으로 삶을 즐기는 낙천주의자',
-essence:[
-'온 산과 들에 핀 각양각색의 꽃과 같습니다. 다른 사람의 에너지를 자신에게 모으고 즐겁게 해주며, 아름답고 다채로운 에너지를 발산합니다. 이 에너지는 주로 창의력으로 피어납니다.',
-'감정의 깊은 물결 속에서 세상을 바라보는 감성적인 유형입니다. 주변 환경과 사람들의 감정 변화에 민감하게 공감하며, 느낌만으로 남들이 알아채지 못하는 것을 포착하는 직관이 발달했습니다.'],
-strengths:[
-'음악·미술·문학 같은 예술 분야에서 빛나는 창의적 재능',
-'논리보다 강하게 작동하는 직관력',
-'틀에 얽매이지 않는 독창적이고 유연한 사고'],
-growth:[
-'좌뇌 활동이 덜 활발할 때 정보 처리 속도가 다소 느릴 수 있어, 차분히 정리하는 습관이 도움이 됩니다.',
-'자신만의 세계에 깊이 잠기지 않도록 몽상과 현실의 리듬을 맞추면 좋습니다.'],
-kw:['감성적','창의력','직관','예술성','공감','유연함']},
-{id:'jewel',em:'💎',ko:'주얼',en:'Jewel',base:true,tag:'논리와 계획으로 목표에 집중하는 이성주의자',
-essence:[
-'산과 바다 깊숙이 숨겨진 보석 같은 사람입니다. 견고하면서도 독특한 에너지를 품고 있으며, 그 에너지가 한 방향으로 집중될 때 힘이 더욱 강력하게 발휘됩니다.',
-'논리와 사실에 기반한 판단을 선호하고 명확하게 의견을 제시하며, 긴장 상황에서도 감정을 잘 제어해 냉정하게 대처합니다. 독립성과 자기 결정권을 중요하게 여깁니다.'],
-strengths:[
-'목표와 가치를 명확히 세우고 효율적으로 몰입하는 집중력',
-'감정에 휘둘리지 않는 냉철한 판단',
-'자기만의 길을 향해 전진하는 추진력'],
-growth:[
-'감정을 억제하기 쉬워 타인과의 감정적 연결·공감이 다소 약해질 수 있습니다.',
-'타인의 의견과 감정에 귀 기울이는 균형을 기르면 관계가 더 건강해집니다.'],
-kw:['이성적','논리','집중','독립성','자기결정','냉철함']},
-{id:'shaker',em:'🌪️',ko:'쉐이커',en:'Shaker',base:true,tag:'변화와 혁신을 위해 끊임없이 움직이는 선구자',
-essence:[
-'새로운 아이디어와 방향을 끊임없이 탐색하며, 기존의 사고와 규범의 한계를 뛰어넘어 변화와 혁신을 추구합니다.',
-'강력한 회오리바람처럼 움직이며 주변을 끌어들이고 주도합니다. 사람들에게 동기를 부여하고 열정을 이끌어내는 촉진자입니다.'],
-strengths:[
-'판을 바꾸는 혁신과 강한 추진력',
-'사람들에게 동기와 열정을 불어넣는 리더십',
-'변화를 두려워하지 않는 역동적인 에너지'],
-growth:[
-'에너지가 불균형할 때 독단적으로 흐르거나 주변을 억압하려 할 수 있어, 내 행동의 영향을 살피는 시선이 필요합니다.',
-'관심사가 자주 바뀌어 깊은 관계 형성이 어려울 수 있으니, 조화롭게 협력하는 방법을 찾는 것이 좋습니다.'],
-kw:['혁신','추진력','열정','동기부여','도전','역동']},
-{id:'stream',em:'🌿',ko:'스트림',en:'Stream',base:true,tag:'따뜻한 돌봄과 감수성으로 평온을 주는 봄날의 햇살',
-essence:[
-'살아있는 모든 생명을 연결하는 물과 같습니다. 조용히 흐르는 물처럼 주변 에너지가 안정을 되찾게 하는 능력을 지녔습니다.',
-'신체 감각 에너지가 탁월하게 발달해 미묘한 변화를 빠르게 알아차리며, 따뜻하고 온화한 성격으로 사람들에게 깊은 안정감과 연대감을 줍니다.'],
-strengths:[
-'사람과 분위기를 안정시키는 치유의 에너지',
-'직접 경험하며 배우는 능력 — 빠른 적응과 학습',
-'자연·동식물과 교감하는 깊은 감수성'],
-growth:[
-'스트레스 속에서는 돌봄 성향이 과도해져 과잉보호하거나 예민해질 수 있습니다.',
-'나를 돌보는 시간과 타인을 돌보는 시간의 균형이 중요합니다.'],
-kw:['안정감','감수성','돌봄','모성','공감','자연친화']}
+ {id:'flower',em:'🌸',ko:'플라워',en:'Flower',base:true,tag:'생동감과 열정으로 삶을 즐기는 낙천주의자',
+  essence:[
+    '온 산과 들에 핀 각양각색의 꽃과 같습니다. 다른 사람의 에너지를 자신에게 모으고 즐겁게 해주며, 아름답고 다채로운 에너지를 발산합니다. 이 에너지는 주로 창의력으로 피어납니다.',
+    '감정의 깊은 물결 속에서 세상을 바라보는 감성적인 유형입니다. 주변 환경과 사람들의 감정 변화에 민감하게 공감하며, 느낌만으로 남들이 알아채지 못하는 것을 포착하는 직관이 발달했습니다.'],
+  strengths:[
+    '음악·미술·문학 같은 예술 분야에서 빛나는 창의적 재능',
+    '논리보다 강하게 작동하는 직관력',
+    '틀에 얽매이지 않는 독창적이고 유연한 사고'],
+  growth:[
+    '좌뇌 활동이 덜 활발할 때 정보 처리 속도가 다소 느릴 수 있어, 차분히 정리하는 습관이 도움이 됩니다.',
+    '자신만의 세계에 깊이 잠기지 않도록 몽상과 현실의 리듬을 맞추면 좋습니다.'],
+  kw:['감성적','창의력','직관','예술성','공감','유연함']},
+
+ {id:'jewel',em:'💎',ko:'주얼',en:'Jewel',base:true,tag:'논리와 계획으로 목표에 집중하는 이성주의자',
+  essence:[
+    '산과 바다 깊숙이 숨겨진 보석 같은 사람입니다. 견고하면서도 독특한 에너지를 품고 있으며, 그 에너지가 한 방향으로 집중될 때 힘이 더욱 강력하게 발휘됩니다.',
+    '논리와 사실에 기반한 판단을 선호하고 명확하게 의견을 제시하며, 긴장 상황에서도 감정을 잘 제어해 냉정하게 대처합니다. 독립성과 자기 결정권을 중요하게 여깁니다.'],
+  strengths:[
+    '목표와 가치를 명확히 세우고 효율적으로 몰입하는 집중력',
+    '감정에 휘둘리지 않는 냉철한 판단',
+    '자기만의 길을 향해 전진하는 추진력'],
+  growth:[
+    '감정을 억제하기 쉬워 타인과의 감정적 연결·공감이 다소 약해질 수 있습니다.',
+    '타인의 의견과 감정에 귀 기울이는 균형을 기르면 관계가 더 건강해집니다.'],
+  kw:['이성적','논리','집중','독립성','자기결정','냉철함']},
+
+ {id:'shaker',em:'🌪️',ko:'쉐이커',en:'Shaker',base:true,tag:'변화와 혁신을 위해 끊임없이 움직이는 선구자',
+  essence:[
+    '새로운 아이디어와 방향을 끊임없이 탐색하며, 기존의 사고와 규범의 한계를 뛰어넘어 변화와 혁신을 추구합니다.',
+    '강력한 회오리바람처럼 움직이며 주변을 끌어들이고 주도합니다. 사람들에게 동기를 부여하고 열정을 이끌어내는 촉진자입니다.'],
+  strengths:[
+    '판을 바꾸는 혁신과 강한 추진력',
+    '사람들에게 동기와 열정을 불어넣는 리더십',
+    '변화를 두려워하지 않는 역동적인 에너지'],
+  growth:[
+    '에너지가 불균형할 때 독단적으로 흐르거나 주변을 억압하려 할 수 있어, 내 행동의 영향을 살피는 시선이 필요합니다.',
+    '관심사가 자주 바뀌어 깊은 관계 형성이 어려울 수 있으니, 조화롭게 협력하는 방법을 찾는 것이 좋습니다.'],
+  kw:['혁신','추진력','열정','동기부여','도전','역동']},
+
+ {id:'stream',em:'🌿',ko:'스트림',en:'Stream',base:true,tag:'따뜻한 돌봄과 감수성으로 평온을 주는 봄날의 햇살',
+  essence:[
+    '살아있는 모든 생명을 연결하는 물과 같습니다. 조용히 흐르는 물처럼 주변 에너지가 안정을 되찾게 하는 능력을 지녔습니다.',
+    '신체 감각 에너지가 탁월하게 발달해 미묘한 변화를 빠르게 알아차리며, 따뜻하고 온화한 성격으로 사람들에게 깊은 안정감과 연대감을 줍니다.'],
+  strengths:[
+    '사람과 분위기를 안정시키는 치유의 에너지',
+    '직접 경험하며 배우는 능력 — 빠른 적응과 학습',
+    '자연·동식물과 교감하는 깊은 감수성'],
+  growth:[
+    '스트레스 속에서는 돌봄 성향이 과도해져 과잉보호하거나 예민해질 수 있습니다.',
+    '나를 돌보는 시간과 타인을 돌보는 시간의 균형이 중요합니다.'],
+  kw:['안정감','감수성','돌봄','모성','공감','자연친화']}
 ];
+
 function makeCard(t,i){
-const el=document.createElement('div');
-el.className='type-card'+(t.main?' main':' base');
-el.style.animationDelay=(i*0.04)+'s';
-el.onclick=()=>openModal(t.id);
-if(t.main){
-el.innerHTML=`<span class="em">${t.em}</span><div class="cc-text"><div class="ko">${t.ko}</div><div class="en">${t.en}</div><div class="tag">${t.tag}</div></div><span class="chev">›</span>`;
-}else{
-el.innerHTML=`<span class="em">${t.em}</span><div class="ko">${t.ko}</div><div class="en">${t.en}</div><div class="tag">${t.tag}</div>`;
-}
-return el;
+  const el=document.createElement('div');
+  el.className='type-card'+(t.main?' main':' base');
+  el.style.animationDelay=(i*0.04)+'s';
+  el.onclick=()=>openModal(t.id);
+  if(t.main){
+    el.innerHTML=`<span class="em">${t.em}</span><div class="cc-text"><div class="ko">${t.ko}</div><div class="en">${t.en}</div><div class="tag">${t.tag}</div></div><span class="chev">›</span>`;
+  }else{
+    el.innerHTML=`<span class="em">${t.em}</span><div class="ko">${t.ko}</div><div class="en">${t.en}</div><div class="tag">${t.tag}</div>`;
+  }
+  return el;
 }
 const mainGrid=document.getElementById('mainGrid'), baseGrid=document.getElementById('baseGrid');
 TYPES.forEach((t,i)=>{(t.main?mainGrid:baseGrid).appendChild(makeCard(t,i));});
+
 const overlay=document.getElementById('overlay'), modal=document.getElementById('modal');
 function openModal(id){
-const t=TYPES.find(x=>x.id===id);
-let html=`<div class="grip"></div>
-<span class="m-em">${t.em}</span>
-<div class="m-ko">${t.ko}</div>
-<div class="m-en">${t.en}</div>
-<div class="m-tag">${t.tag}</div>
-<div class="m-sec">핵심 성향</div>
-<div class="m-body">${t.essence.map(p=>`<p>${p}</p>`).join('')}</div>
-<div class="m-sec">강점</div>
-<ul class="m-list">${t.strengths.map(s=>`<li>${s}</li>`).join('')}</ul>
-<div class="m-sec">균형 포인트</div>
-<ul class="m-list growth">${t.growth.map(s=>`<li>${s}</li>`).join('')}</ul>`;
-if(t.jobs){
-html+=`<div class="m-sec">어울리는 직업</div><div class="m-kw jobs">${t.jobs.map(j=>`<span>${j}</span>`).join('')}</div>`;
-}
-if(t.aroma){
-html+=`<div class="m-sec">추천 아로마 오일</div><ul class="m-aroma">${t.aroma.map(a=>`<li><b>${a.oil}</b> — ${a.note}</li>`).join('')}</ul><p class="m-aroma-tip">🕯️ 발향·마사지로 사용해요. 나에게 딱 맞는 블렌딩은 정식 상담에서 안내해드립니다.</p>`;
-}
-html+=`<div class="m-sec">키워드</div>
-<div class="m-kw">${t.kw.map(k=>`<span>#${k}</span>`).join('')}</div>
-<button class="m-close" onclick="closeModal()">닫기</button>`;
-modal.innerHTML=html;
-overlay.classList.add('open'); modal.scrollTop=0;
-document.body.style.overflow='hidden';
+  const t=TYPES.find(x=>x.id===id);
+  let html=`<div class="grip"></div>
+    <span class="m-em">${t.em}</span>
+    <div class="m-ko">${t.ko}</div>
+    <div class="m-en">${t.en}</div>
+    <div class="m-tag">${t.tag}</div>
+    <div class="m-sec">핵심 성향</div>
+    <div class="m-body">${t.essence.map(p=>`<p>${p}</p>`).join('')}</div>
+    <div class="m-sec">강점</div>
+    <ul class="m-list">${t.strengths.map(s=>`<li>${s}</li>`).join('')}</ul>
+    <div class="m-sec">균형 포인트</div>
+    <ul class="m-list growth">${t.growth.map(s=>`<li>${s}</li>`).join('')}</ul>`;
+  if(t.jobs){
+    html+=`<div class="m-sec">어울리는 직업</div><div class="m-kw jobs">${t.jobs.map(j=>`<span>${j}</span>`).join('')}</div>`;
+  }
+  if(t.aroma){
+    html+=`<div class="m-sec">추천 아로마 오일</div><ul class="m-aroma">${t.aroma.map(a=>`<li><b>${a.oil}</b> — ${a.note}</li>`).join('')}</ul><p class="m-aroma-tip">🕯️ 발향·마사지로 사용해요. 나에게 딱 맞는 블렌딩은 정식 상담에서 안내해드립니다.</p>`;
+  }
+  html+=`<div class="m-sec">키워드</div>
+    <div class="m-kw">${t.kw.map(k=>`<span>#${k}</span>`).join('')}</div>
+    <button class="m-close" onclick="closeModal()">닫기</button>`;
+  modal.innerHTML=html;
+  overlay.classList.add('open'); modal.scrollTop=0;
+  document.body.style.overflow='hidden';
 }
 function closeModal(){overlay.classList.remove('open'); document.body.style.overflow='';}
-// watermark reuses the header logo image (keeps
+(function(){var img=document.querySelector('.header .logo'); if(img){var u=img.getAttribute('src'); var s=document.createElement('style'); s.textContent="body::before{background-image:url('"+u+"')}"; document.head.appendChild(s);}})();
+</script>
+</body>
+</html>
